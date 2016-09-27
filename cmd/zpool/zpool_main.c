@@ -26,6 +26,7 @@
  * Copyright (c) 2012 by Frederik Wessels. All rights reserved.
  * Copyright (c) 2012 by Cyril Plisko. All rights reserved.
  * Copyright (c) 2013 by Prasad Joshi (sTec). All rights reserved.
+ * Copyright 2016 Igor Kozhukhov <ikozhukhov@gmail.com>.
  */
 
 #include <assert.h>
@@ -6030,7 +6031,7 @@ int
 zpool_do_status(int argc, char **argv)
 {
 	int c;
-	int ret;
+	int ret = 0;
 	float interval = 0;
 	unsigned long count = 0;
 	status_cbdata_t cb = { 0 };
